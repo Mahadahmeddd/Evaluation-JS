@@ -5,10 +5,10 @@ var icon = document.getElementById("icon");
 icon.onclick = function() {
  if(mySong.paused) {
    mySong.play();
-   icon.src = "./assets/img/pause.png";
+   icon.src = "./images/img/pause.png";
  } else {
   mySong.pause();
-  icon.src = "./assets/img/play.png";
+  icon.src = "./images/img/play.png";
  }
 }
 
@@ -68,7 +68,7 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
     // 2. Display the result
     let diceDOM = document.querySelector(".dice");
     diceDOM.style.display = "block";
-    diceDOM.src = "./assets/img/dice-" + dice + ".png";
+    diceDOM.src = "./images/img/dice-" + dice + ".png";
 
     // 3. Update the round score IF the rolled number was NOT a 1
     if (dice !== 1) {
