@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name='description'
     content=" Casinos | Welcome at our  New Game Roll Dice, the first come at 100 point Win the game ! Good Luck.">
-  <title>Casino | Roll Dice</title>
+  <title>Je de dé</title>
   <!--Favicon-->
   <link rel="shortcut icon" type="image/ico" href="./assets/img/favicon.ico" />
   <!--Font Family Lato-->
@@ -22,13 +22,13 @@
 <body>
   <!-- HEADER -->
   <header class="header">
-    <h1><a href="index.html"> Welcome To Casino Live Dés </a></h1>
+    <h1><a href="index.html"> Bienvenue au jeu de Dé</a></h1>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="navbar-wrapper">
           <a href="#" class="navbar-item" id="newGame" data-bs-toggle="modal" data-bs-target="#game">New Game</a>
-          <a href="#" class="rules navbar-item" data-bs-toggle="modal" data-bs-target="#rules">Rules</a>
-          <a href="#" class="navbar-item" data-bs-toggle="modal" data-bs-target="">Music =></a>
+          <a href="#" class="rules navbar-item" data-bs-toggle="modal" data-bs-target="#rules">Règles de jeu</a>
+          <a href="#" class="navbar-item" data-bs-toggle="modal" data-bs-target="">Musique =></a>
           <img src="./assets/img/play.png" id="icon">
 
           <audio id="mySong">
@@ -46,16 +46,16 @@
     <!-- Players 1 -->
     <div class="wrapper clearfix">
       <div class="player-0-panel active">
-        <div class="player-name" id="name-0">Player 1</div>
+        <div class="player-name" id="name-0">joueur 1</div>
         <div class="player-score" id="score-0">0</div>
         <div class="player-current-box">
-          <div class="player-current-label">Current</div>
+          <div class="player-current-label">En cours</div>
           <div class="player-current-score" id="current-0">0</div>
         </div>
       </div>
       <!-- Players 2 -->
       <div class="player-1-panel">
-        <div class="player-name-1" id="name-1">Player 2</div>
+        <div class="player-name-1" id="name-1">joueur 2</div>
         <div class="player-score" id="score-1">0</div>
         <div class="player-current-box">
           <div class="player-current-label">Current</div>
@@ -63,7 +63,7 @@
         </div>
       </div>
       <button class="btn-roll">
-        <ion-icon name="refresh"></ion-icon>Roll dice
+        <ion-icon name="refresh"></ion-icon>Jetez la dé
       </button>
 
       <button class="btn-hold">
@@ -98,26 +98,26 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-center">
-          <h3 class="modal-title" id="modal-title">New Game</h3>
+          <h3 class="modal-title" id="modal-title">Nouvelle partie</h3>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <!-- Player1 -->
           <div class="inputPlayers">
             <div class="inputPlayer">
-              <label class="playerTitleUnLabel" for="playerTitleUnInput">Player 1</label>
+              <label class="playerTitleUnLabel" for="playerTitleUnInput">joueur 1</label>
               <input type="text" id="playerTitleUnInput" name="playerTitleUnInput" placeholder="Enter your Firstname">
             </div>
             <!-- Player2 -->
             <div class="inputPlayer">
-              <label class="playerTitleDeuxLabel" for="playerTitleDeuxInput">Player 2</label>
+              <label class="playerTitleDeuxLabel" for="playerTitleDeuxInput">joueur 2</label>
               <input type="text" id="playerTitleDeuxInput" name="playerTitleDeuxInput"
                 placeholder="Enter your Lastname">
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-success btn-new" data-bs-dismiss="modal">PLAY</button>
+          <button type="button" class="btn btn-success btn-new" data-bs-dismiss="modal">Jouer</button>
         </div>
       </div>
     </div>
@@ -126,19 +126,19 @@
   <div class="modal fade modal-rules" id="rules" tabindex="-1" aria-labelledby="rules" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-header">
-        <h3 class="modal-title modal-title-rules" id="rules-title">GAME RULES:</h3>
+        <h3 class="modal-title modal-title-rules" id="rules-title">Règles de jeu:</h3>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body modal-body-rules">
         <div class="rules-content">
-          <p>- The game has 2 players, playing in rounds</p>
-          <p>- In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score
+          <p>- Le jeu est fait pour 2 joueurs, jouant à tour de role</p>
+          <p>- A chaque tour, un joueur lance un dé autant de fois qu'il le souhaite. Chaque résultat est ajouté à son score ROUND
           </p>
-          <p>- BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn</p>
-          <p>- The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After
-            that, it's the next player's turn</p>
-          <p>- The first player to reach 100 points on GLOBAL score wins the game</p>
-          <h4 class="goodluck">GOOD LUCK !</h4>
+          <p>- MAIS, si le joueur trouve un 1, tout son score ROUND est perdu. Après c'est au tour du joueur suivant</p>
+          <p>- Le joueur peut choisir "Hold", ce qui signifie que son score ROUND est ajouté à son score GLBAL. Après
+            ça, c'est au tour du joueur suivant</p>
+          <p>- Le premier joueur à atteindre 100 points sur le score GLOBAL remporte la partie</p>
+          <h4 class="goodluck">Bonne chance!</h4>
         </div>
       </div>
       <div class="modal-footer">
@@ -148,7 +148,7 @@
   </div>
   <!-- FOOTER -->
   <footer class="footer">
-    <p> Copyright © 2022 Casino Live Dés </p>
+    <p> Copyright © 2022 Mahad Ahmed Abdallah </p>
   </footer>
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
