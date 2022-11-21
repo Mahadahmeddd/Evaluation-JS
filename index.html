@@ -49,7 +49,7 @@
         <div class="player-name" id="name-0">joueur 1</div>
         <div class="player-score" id="score-0">0</div>
         <div class="player-current-box">
-          <div class="player-current-label">En cours</div>
+          <div class="player-current-label">ROUND</div>
           <div class="player-current-score" id="current-0">0</div>
         </div>
       </div>
@@ -58,16 +58,17 @@
         <div class="player-name-1" id="name-1">joueur 2</div>
         <div class="player-score" id="score-1">0</div>
         <div class="player-current-box">
-          <div class="player-current-label">En cours</div>
+          <div class="player-current-label">ROUND</div>
           <div class="player-current-score" id="current-1">0</div>
         </div>
       </div>
       <button class="btn-roll">
-        <ion-icon name="refresh"></ion-icon>Jetez la dé
+        <ion-icon name="play"></ion-icon>Jouer
       </button>
 
       <button class="btn-hold">
-        <ion-icon name="download-outline"></ion-icon>Changer
+        <ion-icon name="code-working"></ion-icon>
+        Passer la main
       </button><!-- Audio Roll Dice -->
       <audio id="roll-dice">
         <source
@@ -131,13 +132,15 @@
       </div>
       <div class="modal-body modal-body-rules">
         <div class="rules-content">
-          <p>- Le jeu est fait pour 2 joueurs, jouant à tour de role</p>
-          <p>- A chaque tour, un joueur lance un dé autant de fois qu'il le souhaite. Chaque résultat est ajouté à son score ROUND
-          </p>
-          <p>- MAIS, si le joueur trouve un 1, tout son score ROUND est perdu. Après c'est au tour du joueur suivant</p>
-          <p>- Le joueur peut choisir "Hold", ce qui signifie que son score ROUND est ajouté à son score GLBAL. Après
-            ça, c'est au tour du joueur suivant</p>
-          <p>- Le premier joueur à atteindre 100 points sur le score GLOBAL remporte la partie</p>
+          <p>- Le jeu comprend 2 joueurs sur un seul et même écran.</p>
+          <p>- Chaque joueur possède un score temporaire (ROUND) et un score global (GLOBAL).</p>
+          <p>- À chaque tour, le joueur a son ROUND initialisé à 0 et peut lancer un dé autant de fois qu'il le souhaite. Le 
+            résultat d’un lancer est ajouté au ROUND.</p>
+          <p>Lors de son tour, le joueur peut décider à tout moment de:</p>  
+          <p>- Cliquer sur l’option “Passer la main”, qui permet d’envoyer les points du ROUND vers le GLOBAL. Ce sera alors le
+            tour de l’autre joueur.</p>
+          <p>- Lancer le dé. S’il obtient un 1, son score ROUND est perdu et c’est la fin de son tour.</p>
+          <p>Le premier joueur qui atteint les 100 points sur global gagne le jeu</p>
           <h4 class="goodluck">Bonne chance!</h4>
         </div>
       </div>

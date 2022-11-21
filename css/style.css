@@ -43,7 +43,7 @@ header {
 header a {
   text-decoration: none;
   margin: 0 0 1rem;
-  color: #2684d1;
+  color: #020203;
 }
 
 header a:hover {
@@ -54,7 +54,7 @@ header a:hover {
 header p {
     text-decoration: none;
     margin: 0 0 1rem;
-    color: #2684d1;
+    color: #091016;
   }
 
 header p:hover {
@@ -65,7 +65,7 @@ header p:hover {
 h1 a {
   text-shadow: 2px 0 #232931;
   font-size: clamp(12px, 5vw, 8rem);
-  color: #254fd8;
+  color: #090b0f;
   text-align: center;
   text-decoration: none;
   z-index: 100;
@@ -97,7 +97,7 @@ ion-icon {
 
 .navbar-item {
   text-decoration: none;
-  color: #FFF;
+  color: rgb(0, 0, 0);
   font-size: clamp(1.1rem, 1.6vw, 2.2rem);
   text-shadow: 1px 0 #232931;
   margin: 0 1.1rem;
@@ -428,9 +428,9 @@ button:focus {
 /* FOOTER */
 footer {
  font-style: bold;
- font-size: 25px;
+ font-size: 150px;
  font-family: 'Lato', sans-serif;
- color: rgb(255, 255, 255);
+ color: rgb(250, 249, 253);
   position: relative;
   bottom: 0;
   width: 100%;
@@ -536,7 +536,7 @@ ion-icon {
 }
 .navbar-item {
   text-decoration: none;
-  color: #FFF;
+  color: rgb(147, 9, 9);
   font-size: 15px;
   text-shadow: 1px 0 #232931;
   margin: 12px;
