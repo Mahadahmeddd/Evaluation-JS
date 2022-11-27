@@ -13,7 +13,7 @@ icon.onclick = function() {
 }
 
 var volumeAudio = document.getElementById("mySong");
-volumeAudio.volume = 0.08;
+volumeAudio.volume = 1;
 
 // Set Click Mouse :
 var clickMouse = document.getElementById("clickMouse");
